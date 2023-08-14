@@ -174,9 +174,9 @@ char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* mj_builtin_a.c */
-int _myexit(info_t *);
-int _mycd(info_t *);
-int _myhelp(info_t *);
+int _mjexit(info_t *);
+int _mjcd(info_t *);
+int _mjhlp(info_t *);
 
 /* mj_builtin_b.c */
 int _myhistory(info_t *);
