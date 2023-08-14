@@ -161,9 +161,9 @@ void *_realloc(void *, unsigned int, unsigned int);
 int bfree(void **);
 
 /* mj_atoi.c */
-int interactive(info_t *);
-int is_delim(char, char *);
-int _isalpha(int);
+int interactv(info_t *);
+int is_delimetr(char, char *);
+int _isalphabet(int);
 int _atoi(char *);
 
 /* mj_errors_a.c */
