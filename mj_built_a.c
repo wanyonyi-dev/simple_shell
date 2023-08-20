@@ -7,7 +7,7 @@
  *         (0) if info.argv[0] != "exit"
  */
 
-int _mjexit(info_t *info)
+int _mjexit(info_f *info)
 {
 int exitchecker;
 if (info->argv[1])
@@ -34,9 +34,9 @@ return (-2);
  *  Return: Always 0
  */
 
-int _mjcd(info_t *info)
+int _mjcd(info_f *info)
 {
-char *s, *dir, buffer[1024];
+char *y, *dir, buffer[1024];
 int chdir_ret;
 
 y = getcwd(buffer, 1024);

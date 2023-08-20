@@ -161,26 +161,26 @@ void *_realloc(void *, unsigned int, unsigned int);
 int bfree(void **);
 
 /* mj_atoi.c */
-int interactv(info_t *);
+int interactv(info_f *);
 int is_delimetr(char, char *);
 int _isalphabet(int);
 int _atoi(char *);
 
 /* mj_errors_a.c */
 int _erratoi(char *);
-void print_error(info_t *, char *);
+void print_error(info_f *, char *);
 int print_d(int, int);
 char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* mj_builtin_a.c */
-int _mjexit(info_t *);
-int _mjcd(info_t *);
-int _mjhlp(info_t *);
+int _mjexit(info_f *);
+int _mjcd(info_f *);
+int _mjhlp(info_f *);
 
 /* mj_builtin_b.c */
-int _myhistory(info_t *);
-int _myalias(info_t *);
+int _mjhistory(info_f *);
+int _mjalias(info_f *);
 
 /*mj_getline.c */
 ssize_t get_input(info_t *);
@@ -192,12 +192,12 @@ void clear_info(info_t *);
 void set_info(info_t *, char **);
 void free_info(info_t *, int);
 
-/* mj_enviromentn.c */
-char *_getenv(info_t *, const char *);
-int _myenv(info_t *);
-int _mysetenv(info_t *);
-int _myunsetenv(info_t *);
-int populate_env_list(info_t *);
+/* mj_environment.c */
+char *_getenvironment(info_f *, const char *);
+int _mjenvironment(info_f *);
+int _mjsetenvironment(info_f *);
+int _mjunsetenv(info_f *);
+int mj_populate_environment_list(info_f *);
 
 /* mj_getenvironment.c */
 char **get_environ(info_t *);
