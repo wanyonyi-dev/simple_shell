@@ -125,10 +125,10 @@ char *find_path(info_t *, char *, char *);
 /* loophsh.c */
 int loophsh(char **);
 
-/* mj_errors.c */
-void _eputs(char *);
-int _eputchar(char);
-int _putfd(char c, int fd);
+/* mj_errors_a.c */
+void _fputs(char *);
+int _fputchar(char);
+int _putfd(char m, int fd);
 int _putsfd(char *str, int fd);
 
 /* mj_string_a.c */
@@ -166,7 +166,7 @@ int is_delimetr(char, char *);
 int _isalphabet(int);
 int _atoi(char *);
 
-/* mj_errors_a.c */
+/* mj_errors_b.c */
 int _erratoi(char *);
 void print_error(info_f *, char *);
 int print_d(int, int);
