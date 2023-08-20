@@ -200,9 +200,9 @@ int _mjunsetenv(info_f *);
 int mj_populate_environment_list(info_f *);
 
 /* mj_getenvironment.c */
-char **get_environ(info_t *);
-int _unsetenv(info_t *, char *);
-int _setenv(info_t *, char *, char *);
+char **get_environ(info_f *);
+int _mjunsetenvironment(info_f *, char *);
+int _mjsetenvironment(info_t *, char *, char *);
 
 /* mj_history.c */
 char *get_history_file(info_t *info);
