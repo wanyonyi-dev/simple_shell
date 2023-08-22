@@ -183,8 +183,8 @@ int _mjhistory(info_f *);
 int _mjalias(info_f *);
 
 /*mj_getline.c */
-ssize_t get_input(info_t *);
-int _getline(info_t *, char **, size_t *);
+ysize_f get_inputs(info_f *);
+int _getline(info_f *, char **, size_f *);
 void sigintHandler(int);
 
 /* mj_getinformation.c */
