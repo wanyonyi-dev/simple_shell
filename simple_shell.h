@@ -144,9 +144,9 @@ void _puts(char *);
 int _putchar(char);
 
 /* mj_exits.c */
-char *_strncpy(char *, char *, int);
-char *_strncat(char *, char *, int);
-char *_strchr(char *, char);
+char *_stringcopy(char *, char *, int);
+char *_stringconcat(char *, char *, int);
+char *_stringchr(char *, char);
 
 /* mj_tokenizers.c */
 char **strtow(char *, char *);
