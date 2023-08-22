@@ -169,8 +169,8 @@ int _atoi(char *);
 /* mj_errors_b.c */
 int _erratoi(char *);
 void print_error(info_f *, char *);
-int print_d(int, int);
-char *convert_number(long int, int, int);
+int print_decimal(int, int);
+char *convert_no(long int, int, int);
 void remove_comments(char *);
 
 /* mj_builtin_a.c */
